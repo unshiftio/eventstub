@@ -19,6 +19,10 @@ npm install --save eventstub
 
 ## Usage
 
+The exported function by the module accepts one argument, an array or
+comma/space separated list of methods that should add event listeners for the
+given method name. The methods that are added are automatically prefixed with
+`on`.
 
 ```js
 'use strict';
@@ -27,11 +31,14 @@ var eventstub = require('eventstub')
   , stub = eventstub('message, error, timeout');
 
 stub.onmessage = function message(one, two, four, five, six) {
-
+  // this will acutally be transformed as `stub.on('message', function ..)`
 };
 
 stub.emit('message', 1,2,4,5,6)
 ```
+
+If you add another `onmessage` handler we will automatically kill all previously
+assigned handlers so your `onmessage` handler is the only event listener.
 
 ## License
 
