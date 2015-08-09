@@ -1,6 +1,6 @@
 # eventstub
 
-[![Made by unshift][made-by]](http://unshift.io)[![Version npm][version]](http://browsenpm.org/package/eventstub)[![Build Status][build]](https://travis-ci.org/unshiftio/eventstub)[![Dependencies][david]](https://david-dm.org/unshiftio/eventstub)[![Coverage Status][cover]](https://coveralls.io/r/unshiftio/eventstub?branch=master)[![IRC channel][irc]](http://webchat.freenode.net/?channels=unshift)
+[![Made by unshift][made-by]](http://unshift.io)[![Version npm][version]](http://browsenpm.org/package/eventstub)[![Build Status][build]](https://travis-ci.org/unshiftio/eventstub)[![Dependencies][david]](https://david-dm.org/unshiftio/eventstub)[![Coverage Status][cover]](https://coveralls.io/r/unshiftio/eventstub?branch=master)[![IRC channel][irc]](https://webchat.freenode.net/?channels=unshift)
 
 [made-by]: https://img.shields.io/badge/made%20by-unshift-00ffcc.svg?style=flat-square
 [version]: https://img.shields.io/npm/v/eventstub.svg?style=flat-square
@@ -34,7 +34,7 @@ stub.onmessage = function message(one, two, four, five, six) {
   // this will acutally be transformed as `stub.on('message', function ..)`
 };
 
-stub.emit('message', 1,2,4,5,6)
+stub.emit('message', 1, 2, 4, 5, 6);
 ```
 
 If you add another `onmessage` handler we will automatically kill all previously
@@ -42,4 +42,4 @@ assigned handlers so your `onmessage` handler is the only event listener.
 
 ## License
 
-MIT
+[MIT](LICENSE)
