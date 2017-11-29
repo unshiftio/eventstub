@@ -35,6 +35,6 @@
     "pre-commit": "~1.2.0"
   },
   "dependencies": {
-    "eventemitter3": "~2.0.2"
+    "eventemitter3": "~3.0.0"
   }
 }
