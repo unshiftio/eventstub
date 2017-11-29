@@ -52,7 +52,7 @@ describe('eventstub', function () {
       throw new Error('I should be removed');
     };
 
-    e.onfoo = next();
+    e.onfoo = next;
     e.emit('foo');
   });
 });
